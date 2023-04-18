@@ -28,6 +28,9 @@ namespace task_2
 
             Console.WriteLine(shop_1 + "\n");
             Console.WriteLine(shop_2 + "\n");
+
+            shop_1.Dispose();
+            shop_2.Dispose();
         }
     }
 }

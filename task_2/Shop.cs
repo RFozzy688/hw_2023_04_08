@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task_2
 {
-    internal class Shop
+    internal class Shop : IDisposable
     {
         public string NameShop { get; set; }
         public string Address { get; set; }
@@ -17,10 +17,13 @@ namespace task_2
             Address = address;
             TypeShop = typeShop;
         }
-
         public override string ToString()
         {
             return $"Название: {NameShop}\nАдрес: {Address}\nТип магазина: {TypeShop}";
+        }
+        public void Dispose()
+        {
+            Console.WriteLine("Очистка ресурсов"); ;
         }
     }
 }
