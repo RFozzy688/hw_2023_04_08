@@ -31,6 +31,9 @@ namespace task_3
 
             Console.WriteLine(piece_1 + "\n");
             Console.WriteLine(piece_2 + "\n");
+
+            piece_1.Dispose();
+            piece_2.Dispose();
         }
     }
 }

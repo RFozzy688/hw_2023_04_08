@@ -23,7 +23,11 @@ namespace task_3
         }
         public void Dispose()
         {
-            Console.WriteLine("Очистка ресурсов"); ;
+            Console.WriteLine("Очистка ресурсов метод Dispose() class Shop");
+        }
+        ~Shop() 
+        {
+            Console.WriteLine("Отработал финализатор class Shop");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task_3
 {
-    internal class Piece
+    internal class Piece : IDisposable
     {
         public string NamePiece { get; set; }
         public string Author { get; set; }
@@ -25,9 +25,15 @@ namespace task_3
         {
             return $"Название: {NamePiece}\nАвтор: {Author}\nЖанр: {Genre}\nГод: {Year}";
         }
+
+        public void Dispose()
+        {
+            Console.WriteLine("Отработал метод Dispose() class Piece"); ;
+        }
+
         ~Piece()
         {
-            Console.WriteLine("Отработал финализатор");
+            Console.WriteLine("Отработал финализатор class Piece");
         }
     }
 }
