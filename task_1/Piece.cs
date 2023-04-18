@@ -8,10 +8,10 @@ namespace task_1
 {
     internal class Piece
     {
-        string NamePiece { get; set; }
-        string Author { get; set; }
-        string Genre { get; set; }
-        int Year { get; set; }
+        public string NamePiece { get; set; }
+        public string Author { get; set; }
+        public string Genre { get; set; }
+        public int Year { get; set; }
 
         public Piece(string namePiece, string author, string genre, int year)
         {
