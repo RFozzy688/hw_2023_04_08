@@ -25,5 +25,9 @@ namespace task_1
         {
             return $"Название: {NamePiece}\nАвтор: {Author}\nЖанр: {Genre}\nГод: {Year}";
         }
+        ~Piece()
+        {
+            Console.WriteLine("Отработал финализатор");
+        }
     }
 }

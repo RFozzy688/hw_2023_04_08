@@ -25,9 +25,8 @@ namespace task_1
             Piece piece_1 = new Piece("Ревизор", "Николай Гоголь", "Комедия", 1836);
             Piece piece_2 = new Piece("Вишневый сад", "Антон Чехов", "Драма", 1903);
 
-            Console.WriteLine(piece_1);
-            Console.WriteLine();
-            Console.WriteLine(piece_2);
+            Console.WriteLine(piece_1 + "\n");
+            Console.WriteLine(piece_2 + "\n");
         }
     }
 }
